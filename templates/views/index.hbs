@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/weather.png">
+  <title>Document</title>
+</head>
+<body>
+  <title>Weather</title>
+  <div class="container">
+    {{>header}}
+    <p>{{pharagraph}}</p>
+    <form class="weatherForm" action="">
+      <input class="weatherFormInput" type="text" placeholder="Enter a city">
+      <button class="weatherFormButton">SEARCH</button>
+    </form>
+    <p class="errorParagraph"></p>
+    <div class="temperature">
+      <div class="temperatureNumber">
+      </div>
+       <span class="temperatureUnit temperatureUnitDisplay">°C</span>
+    </div>
+   
+  </div>
+  {{>footer}}
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

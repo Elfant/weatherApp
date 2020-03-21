@@ -1,0 +1,95 @@
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  color: #333;
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  color: #888;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center    ;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.navLink {
+  color: #888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.errorParagraph {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.weatherForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherFormInput {
+  height: 30px;
+  padding: 8px 0 8px 5px;
+  font-size: 18px;
+}
+
+.weatherFormButton {
+  border: solid 1px #333;
+  background: rgb(212, 211, 211);
+  padding: 3px;
+  width: 130px;
+  margin-top: 10px;
+  background: #f5ad80;
+  border: none;
+  border-radius: 3px;
+  transition: background 1s,
+              color 1s;
+}
+
+.weatherFormButton:hover {
+  background: #f47322;
+  color: #eee;
+}
+
+.temperature {
+  text-align: center;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.temperatureUnit {
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.temperatureUnitDisplay {
+  display: none;
+}
